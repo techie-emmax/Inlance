@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>naigation bar</title>
+    <title>navigation bar</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
         integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
@@ -13,30 +13,44 @@
 </head>
 
 <body>
-    <div class="w-100% md:w-[100%] sm:w-[100%]">
+    <div class="w-100% md:w-[100%] w-[100%]">
         <div
-            class="flex bg-black sm:bg-gray-500 md:black lg:bg-gray-900 text-white items-center justify-between p-[20px] mx-auto md:p-7 sm:p-4">
-            <a href="" class="text-white hover:text-white hover:underline"><i
-                    class="las la-phone text-yellow-300 text-[20px]"></i>Call:+234-9055-7748-13</a>
-            <a href="" class="text-white hover:text-white hover:underline"><i
-                    class="las la-envelope text-yellow-300 text-[20px]"></i>Email:emeraldkreative@gmail.com</a>
+            class="flex bg-black bg-gray-500 md:black lg:bg-gray-900 text-white items-center justify-between p-[20px] mx-auto md:p-7 sm:p-4">
+            <a href="tel:090 5577 4813" class="text-white text-[15px] md:text-[24px] hover:text-white hover:underline"><i
+                    class="las la-phone text-yellow-300 text-[15px] md:text-[20px]"></i>Call:+234-9055-7748-13</a>
+            <a href="mailto:emeraldkreative@gmail.com" class="text-white text-[15px] md:text-[24px] hover:text-white hover:underline"><i
+                    class="las la-envelope text-yellow-300 text-[15px] md:text-[20px]"></i>Email:emeraldkreative@gmail.com</a>
         </div>
         <div class="bg-cyan-100 relative">
-            <div class="flex flex-row items-center sm:bg-yellow-200 md:bg-cyan-100 justify-between md:p-4">
-                <h3 class="text-blue-500 font-bold p-[20px] text-[25px]">INLANCE</h3>
-                <div class="m-[25px] space-x-12 hidden md:block">
-                    <a href="" class="text-blue-500 hover:text-white">Home</a>
-                    <a href="about.html" class="hover:text-white">About</a>
-                    <a href="services.html" class="hover:text-white">Services</a>
-                    <a href="contact.html" class="hover:text-white">Contact</a>
-                </div>
+    <div class="flex flex-row items-center justify-between">
+        <h3 class="text-blue-500 font-bold p-[20px] text-[25px]">INLANCE</h3>
+        <div class="m-[25px]">
+            <div class="hidden md:block space-x-12 m-[25px]">
+                <a href="/" class="text-blue-500 hover:text-white">Home</a>
+                <a href="/about.html" class="hover:text-white">About</a>
+                <a href="/services.html" class="hover:text-white">Services</a>
+                <a href="/contact.html" class="hover:text-white">Contact</a>
             </div>
-            <div class="flex md:ml-80 sm:-ml-10 items-center">
-                <div class="md:p-4 sm:ml-15">
-                    <p class="text-blue-500 text-[40px] font-bold leading-tight">Repair and<br>Maintenance<br>Services
+            <div class="relative md:hidden">
+                <button id="menu" class="md:hidden">
+                    ☰
+                </button>
+                <nav id="mobile-menu" class="absolute top-10 right-0 z-10 hidden bg-white shadow-lg p-4 rounded-md">
+                    <a href="/" class="block px-4 py-2 text-blue-500 hover:text-white hover:bg-blue-500">Home</a>
+                    <a href="/about.html" class="block px-4 py-2 text-blue-500 hover:text-white hover:bg-blue-500">About</a>
+                    <a href="/services.html" class="block px-4 py-2 text-blue-500 hover:text-white hover:bg-blue-500">Services</a>
+                    <a href="/contact.html" class="block px-4 py-2 text-blue-500 hover:text-white hover:bg-blue-500">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+       <div class="flex md:ml-80 ml-10 items-center">
+                <div class="md:p-4 p-2">
+                    <p class="text-blue-500 text-[32px] md:text-[50px] font-bold leading-tight">Repair and<br>Maintenance<br>Services
                     </p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem <br>adipisci. Quos
+                    <p class="text-[19px] md:text-[20px] ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Qui harum voluptatem <br>adipisci. Quos
                         molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta <br>hic praesentium
                         mollitia consequatur beatae, aspernatur culpa.</p>
                     <br>
@@ -48,83 +62,94 @@
                     <img src="slider-img.png" alt="click">
                 </div>
             </div>
+</div>
+
             <div
-                class="flex flex-row sm:flex-row md:flex-row items-center space-x-4 absolute -bottom-40 left-100 text-center md:top-170 md:left-83 sm:-bottom-55 sm:left-10">
+                class="flex flex-row items-center gap-4 absolute -bottom- left-5 text-center md:-bottom-45 md:left-50 md:pl-70">
                 <div
-                    class="px-[20%] py-[32%] sm:py-[5%] sm:px-[10%] md:py-[20%] md:px-[32%] shadow-md hover:bg-yellow-500 shadow-black bg-white">
+                    class="px-[8%] py-[5%] md:py-[20%] md:px-[32%] shadow-md hover:bg-yellow-500 shadow-black bg-white">
                     <i class="las la-ruler text-[50px]"></i>
-                    <p class="text-[40px]">Repair</p>
+                    <p class=" text-[30px] md:text-[40px]">Repair</p>
                 </div>
                 <div
-                    class="py-[35%] px-[70%] sm:py-[5%] sm:px-[8%] md:py-[20%] md:px-[30%] sm:text-center md:text-center bg-yellow-500 shadow-md shadow-black">
+                    class="py-[5%] px-[5%] md:py-[20%] md:px-[30%] sm:text-center md:text-center bg-yellow-500 shadow-md shadow-black">
                     <i class="las la-home text-[50px] bg-yellow-500"></i>
-                    <p class="text-[40px]">Improve</p>
+                    <p class=" text-[30px] md:text-[40px]">Improve</p>
                 </div>
                 <div
-                    class="px-[130px] py-[50px] sm:py-[5%] sm:px-[5%] md:py-[20%] md:px-[28%] hover:bg-yellow-500 bg-white shadow-md shadow-black">
+                    class="px-[4%] py-[5%] md:py-[20%] md:px-[28%] hover:bg-yellow-500 bg-white shadow-md shadow-black">
                     <i class="las la-house-damage text-[50px]"></i>
-                    <p class="text-[40px]">Maintain</p>
+                    <p class="text-[30px] md:text-[40px]">Maintain</p>
                 </div>
             </div>
         </div>
-        <div class="flex flex-row p-[40px] sm:mt-55 md:m-20 md:ml-50 sm:gap-1 sm:align-top">
+        <div
+            class="flex flex-col md:flex-row p-[40px] mt-25 md:mt-55 md:p-[60px] md:ml-80">
             <div>
-                <p class="text-[40px] font-bold leading-tight">About Us</p><br>
-                <p class="sm:text-[12px]">There are many variations of passages of Lorem Ipsum available,<br>but the majority have
+                <p class="text-[40px] font-bold text-center md:text-left leading-tight">About Us</p><br>
+                <p class="text-[15px] md:text-[20px] text-justify break-words hyphens-auto w-110 ">There are many variations of passages of Lorem Ipsum
+                    available,<br>but the majority have
                     suffered alteration in some form, by<br> injected humour, or randomised. There are many variations
                     of<br>passages of Lorem Ipsum available, but the majority have suffered<br>alteration in some form,
                     by injected humour, or randomised.</p>
                 <br>
                 <button
-                    class="border-2 border-blue-400 px-10 py-2 bg-blue-400 font-bold rounded-[5px] p-2 text-black hover:bg-transparent">Read
+                    class="border-2 border-blue-400 px-10 py-2 bg-blue-400 font-bold rounded-[5px] mx-auto text-black hover:bg-transparent">Read
                     More</button>
             </div>
-            <div class="ml-[40px]">
-                <img src="about-img.jpg" alt="damn">
+            <div class="ml-[40px] mt-5 md:mt-0 ">
+                <img src="about-img.jpg" alt="damn" class="rounded-md">
             </div>
         </div>
-        <div class="bg-blue-300">
-            <div class="flex items-center sm:p-3 sm:gap-2 sm:ml-10 md:ml-50 ml-50">
-                <div class="sm:p-[10px] md:p-[100px] p-[100px]">
+        <div class="bg-blue-300 p-3 md:p-0">
+            <div class="flex flex-col md:flex-row items-center md:ml-50 ml-15">
+                <div class="md:p-[100px]">
                     <img src="professional-img.png">
                 </div>
                 <div>
-                    <h3 class="text-[40px] font-bold text-blue-700 leading-tight">We Provide Professional<br>Home
+                    <h3 class="text-[32px] md:text-[40px] font-bold text-blue-700 text-left  leading-none">We Provide Professional<br>Home
                         Services.
                     </h3><br>
-                    <p>randomised words which don't look even slightly believable. If you are
+                    <p class="w-100 md:w-100 text-[18px] md:text-[20px]">randomised words which don't look even slightly believable. If you are
                         going to<br> use a passage of
                         Lorem Ipsum, you need to be sure there isn't anything<br> embarrassing hidden in the middle of
                         text.
                         All randomised words which don't look even slightly</p><br>
                     <button
-                        class="border-2 border-yellow-500 text-white px-10 py-2 bg-yellow-500 hover:bg-transparent">Read
+                        class="border-2 border-yellow-500 mx-auto block text-white px-10 py-2 rounded-md bg-yellow-500 hover:bg-transparent">Read
                         More</button>
                 </div>
             </div>
         </div>
-        <div class="p-[50px]">
+        <div class="mt-5 md:mt-0 md:p-[50px]">
             <div>
                 <h3 class="font-bold text-[30px] text-center">OUR SERVICES</h3>
             </div>
         </div>
-        <div class="flex space-x-12 p-[40px] justify-center">
-            <div class="py-9 px-13 sm:py-3 sm:px-1 md:py-9 md:px-13 shadow-md shadow-black text-center bg-white hover:bg-yellow-500">
+        <div
+            class="grid md:grid-cols-3 grid-rows-1 md:gap-10 md:p-[50px] p-[20px] items-center justify-center gap-3">
+            <div
+                class="py-9 px-13 md:py-9 md:px-5 shadow-md shadow-black text-center bg-white hover:bg-yellow-500">
                 <i class="las la-ruler text-[50px]"></i>
                 <p class="text-[30px]">Maintenance</p>
-                <p>when looking at its layout.The point of using <br>Lorem Ipsum is that it has a more-or-less<br>
+                <p class="sm-text-[10px]">when looking at its layout.The point of using <br>Lorem Ipsum is that it has a
+                    more-or-less<br>
                     normal</p>
             </div>
-            <div class="py-13 px-17 sm:py-3 sm:px-10 md:py-9 md:px-13 shadow-md shadow-black text-center bg-white hover:bg-yellow-500">
+            <div
+                class="py-9 px-13 md:py-9 md:px-5 shadow-md shadow-black text-center bg-white hover:bg-yellow-500">
                 <i class="las la-home text-[50px]"></i>
                 <p class="text-[30px]">Electrical</p>
-                <p>when looking at its layout. The point of using <br>Lorem Ipsum is that it has a more-or-less<br>
-                    normal</p>
+                <p class="sm-text-[10px]"></p>when looking at its layout. The point of using <br>Lorem Ipsum is that it
+                has a more-or-less<br>
+                normal</p>
             </div>
-            <div class="py-13 px-17 sm:py-3 sm:px-6 md:py-9 md:px-13 bg-white text-center shadow-md shadow-black hover:bg-yellow-500">
+            <div
+                class="py-9 px-13 md:py-9 md:px-5 bg-white text-center shadow-md shadow-black hover:bg-yellow-500">
                 <i class="las la-house-damage text-[50px]"></i>
                 <p class="text-[30px]">Plumbing</p>
-                <p>when looking at its layout. The point of using <br>Lorem Ipsum is that it has a more-or-less<br>
+                <p class="sm-text-[10px]">when looking at its layout. The point of using <br>Lorem Ipsum is that it has
+                    a more-or-less<br>
                     normal</p>
             </div>
         </div><br>
@@ -137,83 +162,89 @@
     <div class="p-[70px] text-center">
         <h3 class="font-bold text-[30px]">WHAT OUR CLIENTS SAY</h3>
     </div>
-    <div class="flex flex-row justify-between m-[40px] justify-center">
+    <div class="flex flex-col md:flex-row md:m-[40px] md:justify-center gap-5 p-5 md:p-0">
         <div
-            class="border-4 border-y-[20px] border-x-[70px] border-white border-solid bg-white shadow-md shadow-black m-[20px]">
-            <img src="my  school passport.jpg" class="rounded-[100px] h-[100px]">
+            class="p-4 border-1 border-white border-solid bg-white shadow-md shadow-black">
+            <img src="my  school passport.jpg" class="w-[55px] h-[55px] md:w-[70px] md:h-[70px] rounded-md">
             <p>chunk as necessary, making this the first true generator on the <br>internet.It uses a
                 dictionary of over
                 200latin word combine with a<br> handful of model, sentence structures, to generate Lorem
                 Ipsum</p>
         </div>
-        <div class="border-4 border-y-[20px] border-x-[70px] border-white border-solid shadow-md shadow-black m-[20px]">
-            <img src="my  school passport.jpg" class="rounded-[100px] h-[100px]">
+        <div class="p-4 border-1 border-white border-solid shadow-md shadow-black">
+            <img src="my  school passport.jpg" class="w-[55px] h-[55px] md:w-[70px] md:h-[70px] rounded-md">
+            <p>chunk as necessary, making this the first true generator on the <br>internet.It uses a
+                dictionary of over
+                200latin word combine with a<br> handful of model, sentence structures, to generate Lorem
+                Ipsum</p>
+        </div>
+        <div class="p-4 border-1 border-white border-solid shadow-md shadow-black">
+            <img src="my  school passport.jpg" class="w-[55px] h-[55px] md:w-[70px] md:h-[70px] rounded-md">
             <p>chunk as necessary, making this the first true generator on the <br>internet.It uses a
                 dictionary of over
                 200latin word combine with a<br> handful of model, sentence structures, to generate Lorem
                 Ipsum</p>
         </div>
     </div>
-    <div class="p-20 sm:p-10 md:p-20">
-        <h3 class="font-bold text-[30px]">CONTACT US</h3>
-        <div class="flex flex-row items-center gap-5">
-            <div>
+    <div class="p-5">
+        <h3 class="font-bold text-[30px] md:text-center">CONTACT US</h3>
+        <div class="flex flex-col md:flex-row items-center md:gap-5 md:pl-50">
+            <div class="">
                 <br>
-                <form class="p-6 sm:p-2">
+                <form class="">
                     <input type="text" placeholder="Name"
-                        class="bg-white block pt-[10px] pr-[250px] sm:pr-[100px] md:pr-[250px] pb-[15px] pl-[15px] text-left outline-none my-[15px] shadow-sm shadow-black text-[20px] placeholder:text-black md:pr-[250px]">
+                        class="bg-white block pt-[10px] pr-[100px] md:pr-[250px] pb-[15px] pl-[15px] text-left outline-none my-[15px] shadow-sm shadow-black text-[20px] placeholder:text-black">
                     <input type=" text" placeholder="Phone Number"
-                        class="bg-white block pt-[10px] pr-[250px] sm:pr-[100px] md:pr-[250px] pb-[15px] pl-[15px] shadow-sm my-[15px] outline-none shadow-black text-[20px] placeholder:text-black md:pr-[250px]">
+                        class="bg-white block pt-[10px] pr-[100px] md:pr-[250px] pb-[15px] pl-[15px] shadow-sm my-[15px] outline-none shadow-black text-[20px] placeholder:text-black">
                     <input type="mail" placeholder="Email"
-                        class="bg-white pt-[10px] pr-[250px] sm:pr-[100px] md:pr-[250px] pb-[15px] pl-[15px] block shadow-sm my-[15px] outline-none shadow-black text-[20px] placeholder:text-black md:pr-[250px]">
+                        class="bg-white pt-[10px] pr-[100px] md:pr-[250px] pb-[15px] pl-[15px] block shadow-sm my-[15px] outline-none shadow-black text-[20px] placeholder:text-black">
                     <input type="field" placeholder="Message"
-                        class="text-black bg-white my-[15px] block pt-[10px] pr-[250px] sm:pr-[100px] md:pr-[250px] pb-[150px] pl-[15px] shadow-sm outline-none shadow-black text-[20px] placeholder:text-black md:pr-[250px]">
+                        class="text-black bg-white my-[15px] block pt-[10px] pr-[100px] md:pr-[250px] pb-[150px] pl-[15px] shadow-sm outline-none shadow-black text-[20px] placeholder:text-black">
                     <button
                         class="border-2 hover:bg-transparent hover:text-blue-600 border-blue-400 text-white bg-blue-400 px-10 py-2 text-5 font-[50px]">SEND</button>
                 </form>
             </div>
-            <div>
+            <div class="">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1012916.4804737656!2d3.9050605000000003!3d7.3869175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1743896466290!5m2!1sen!2sng"
                     width="650" height="400" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="sm:w-55 md:w-650"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" class="mt-5 md:mt-0 w-110 md:w-210"></iframe>
             </div>
         </div>
     </div>
-    <div class="bg-blue-950 text-center p-10 sm:p-5 md:p-10">
+    <div class="bg-blue-950 text-center p-10">
         <div class="p-7">
-            <p class="text-white text-[28px] font-bold text-center">GET IN TOUCH</p>
-            <span class="flex flex-row items-center justify-between text-size relative p-20 sm:p-5 md:p-20 text-center ">
-                <div class="text-center ml-25">
+            <p class="text-white text-[28px] font-bold">GET IN TOUCH</p>
+            <div class="flex flex-col md:flex-row relative mt-5 md:mt-0 p-3 md:p-20 justify-center gap-10">
+                <div class="md:ml-25 z-1">
                     <i
-                        class="las la-map-marker rounded-full p-4 border border-blue-500 bg-blue-500 text-[30px] text-white hover:text-yellow-500"></i>
+                        class="las la-map-marker rounded-full p-4 border border-blue-500 bg-blue-500 text-[30px] text-white hover:bg-yellow-500"></i>
 
-                    <p class="text-white">Lorem ipsum is simply dummytext</p>
+                    <p class="text-white text-[12px] mt-5 md:mt-0 md:text-[18px]">Lorem ipsum is simply dummytext</p>
                 </div>
-                <div class="ml-25">
+                <div class="md:ml-25 z-1">
                     <i
-                        class="las la-phone rounded-full p-4 border border-blue-500 bg-blue-500 text-[30px] text-white hover:bg-yellow-500"></i>
-                    <p class="text-white">+234-9055-7748-13</p>
+                        class="las la-phone rounded-full p-4  border border-blue-500 bg-blue-500 text-[30px] text-white hover:bg-yellow-500"></i>
+                    <p class="text-white text-[13px] mt-5 md:mt-0 md:text-[18px]">+234-9055-7748-13</p>
                 </div>
-                <div class="ml-25">
+                <div class="md:ml-25 z-1">
                     <i
                         class="las la-envelope rounded-full p-4 border border-blue-500 bg-blue-500 text-[30px] text-white hover:bg-yellow-500"></i>
-                    <p class="text-white">emeraldkreative@gmail</p>
+                    <p class="text-white text-[13px] mt-5 md:mt-0 md:text-[18px]">emeraldkreative@gmail</p>
                 </div>
-                <div>
-                    <hr class="w-[23.45%] text-white absolute top-28 left-[18.9%] sm:top-10 sm:left-[20%]">
-                </div>
-                <div>
-                    <hr class="w-[21.4%] text-white absolute top-28 left-[46.1%] sm:top-10 sm:left-[60%]">
-                </div>
-            </span>
+
+                <hr
+                    class="md:w-[33%] absolute text-white md:bottom-[55%] md:right-[30%]">
+
+
+            </div>
             <p class="text-white text-[28px] font-bold text-center">FOLLOW US</p>
             <br>
             <span class="bg-white border border-white px-4 pt-3">
-                <i class="lab la-facebook-f text-blue-500 text-[32px] hover:text-yellow-500"></i><i
-                    class="lab la-twitter text-blue-500 text-[32px] hover:text-yellow-500"></i><i
-                    class="lab la-youtube text-blue-500 text-[32px] hover:text-yellow-500"></i><i
-                    class="lab la-instagram text-blue-500 text-[32px] hover:text-yellow-500"></i>
+                <a href=""><i class="lab la-facebook-f text-blue-500 text-[32px] hover:text-yellow-500"></i></a>
+                <a href=""><i class="lab la-twitter text-blue-500 text-[32px] hover:text-yellow-500"></i></a>
+                <a href=""><i class="lab la-youtube text-blue-500 text-[32px] hover:text-yellow-500"></i> </a>
+                <a href=""><i class="lab la-instagram text-blue-500 text-[32px] hover:text-yellow-500"></i></a>
             </span>
         </div>
         <span class="text-center">
@@ -222,6 +253,7 @@
         </span>
         <hr class="w-[60%] text-white text-center mx-auto">
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
