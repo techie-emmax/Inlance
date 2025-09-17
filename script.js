@@ -7,10 +7,12 @@
         mobileMenu.classList.toggle('hidden');
     });
 
-const textArea=document.getElementById('text')
-textArea.addEventListener('input',()=>{
-    this.value=this.value.replace(/[^a-zA-Z]/g,)
-}) 
+const textArea = document.getElementById('text');
+textArea.addEventListener('input', (event) => {
+
+    event.target.value = event.target.value.replace(/[^a-zA-Z]/g, '');
+});
+
 const currentYear = new Date().getFullYear();
 document.getElementById("current-year").innerHTML=currentYear;
 
